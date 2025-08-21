@@ -1,0 +1,133 @@
+/* App.css */
+
+/* Reset body and center container */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  background: #f0f2f5;     /* Light gray background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* General container */
+.todo-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Input + Button container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Input box */
+input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Add button */
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Todo list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Todo items */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 8px 0;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+/* Hover effect on todo */
+li:hover {
+  transform: scale(1.02);
+  background: #f1f1f1;
+}
+
+/* Completed todo */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #dc3545;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #a71d2a;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 500px) {
+  .todo-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  input {
+    width: 60%;
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
